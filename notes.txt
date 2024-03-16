@@ -1,0 +1,2 @@
+git reset --hard <commit> //where commit is the hash of a previous commit
+git reset --hard origin/master //where origin/master is the version on github
