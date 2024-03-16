@@ -1,2 +1,5 @@
 git reset --hard <commit> //where commit is the hash of a previous commit
 git reset --hard origin/master //where origin/master is the version on github
+git branch //shows all branches and indicates which branch i'm in currently
+git checkout -b <branch name> //creates a new branch and switches to that branch
+git checkout <branch name> //switches to an existing branch
