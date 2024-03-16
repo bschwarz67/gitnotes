@@ -1,5 +1,32 @@
-git reset --hard <commit> //where commit is the hash of a previous commit
-git reset --hard origin/master //where origin/master is the version on github
+
+
+basic:
+git clone <https web url> //creates a local copy of the repository (linked to github, git) on the local machine in use, will be stored in a directory with the name of the github repository within the directory that the command is called
+
+git add <file> //adds the file to the current commit to be recorded if the file was added, changes were made to the file
+git commit -m "<message>"//saves/commits the changes, -m indicates a message will be designated in quotes in the command line
+git commit -a //saves/commits all files that have been changed without having to explicity add files to the commit
+git reset --hard <commit> //rolls back the repository to <commit> where commit is the hash of a previous commit
+git reset --hard origin/master //rolls back the repository to origin/master where origin/master is the version on github
+
+
+merge conflicts:
+//two different changes have been made to the same line, cannot be merged automatically
+//conflict will be indicated in file by:
+//<<<<<<< HEAD
+//<your version of the line with a conflict>
+//=======
+//<other version of the line that was commited by someone else>
+//>>>>>>> <hash of the other version of the line that was commited by someone else>
+
+//when somone tries to pull/pull, then push a commit to a repo that has a conflicting commit, the local file in conflict gets the non conflicting changes made by somone else, and the previous metadata indicating the conflict. the person pulling must remove the metadata, manually make the appropriate change to the file that indicates how the conflict should be resolved, and then continue to commit, push the resolution.
+
+
+branching:
+
 git branch //shows all branches and indicates which branch i'm in currently
 git checkout -b <branch name> //creates a new branch and switches to that branch
 git checkout <branch name> //switches to an existing branch
+
+//before switching branches the branch must be committed
+//you must commit changes after merging two branches
