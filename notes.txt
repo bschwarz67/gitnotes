@@ -19,7 +19,7 @@ merge conflicts:
 //<other version of the line that was commited by someone else>
 //>>>>>>> <hash of the other version of the line that was commited by someone else>
 
-//when somone tries to pull/pull, then push a commit to a repo that has a conflicting commit, the local file in conflict gets the non conflicting changes made by somone else, and the previous metadata indicating the conflict. the person pulling must remove the metadata, manually make the appropriate change to the file that indicates how the conflict should be resolved, and then continue to commit, push the resolution.
+//when somone tries to pull/pull, then push a commit to a repo that has a conflicting commit, the local file in conflict gets the non //conflicting changes made by somone else, and the previous metadata indicating the conflict. the person pulling must remove the metadata, //manually make the appropriate change to the file that indicates how the conflict should be resolved, and then continue to commit, push the //resolution.
 
 
 branching:
